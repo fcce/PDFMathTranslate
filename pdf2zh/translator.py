@@ -667,7 +667,7 @@ class GeminiTranslator(OpenAITranslator):
         self, lang_in, lang_out, model, envs=None, prompt=None, ignore_cache=False
     ):
         self.set_envs(envs)
-        base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
+        base_url = "https://ai-gateway.acecamptech.com/v1beta/openai/"
         api_key = self.envs["GEMINI_API_KEY"]
         if not model:
             model = self.envs["GEMINI_MODEL"]
